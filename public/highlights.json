@@ -1,0 +1,26 @@
+[
+  {
+    "id": 1,
+    "user": "Rahman Kabir",
+    "avatar": "https://randomuser.me/api/portraits/men/32.jpg",
+    "comment": "The Christmas Eve exhibition was mind-blowing! The attention to detail in every stroke is incredible.",
+    "tag": "Event Review",
+    "date": "2 days ago"
+  },
+  {
+    "id": 2,
+    "user": "Anika Jaman",
+    "avatar": "https://randomuser.me/api/portraits/women/44.jpg",
+    "comment": "Finally found a platform that truly celebrates creative artists. Uploaded my first artwork today!",
+    "tag": "New Artist",
+    "date": "5 hours ago"
+  },
+  {
+    "id": 3,
+    "user": "Zayan Malik",
+    "avatar": "https://randomuser.me/api/portraits/men/46.jpg",
+    "comment": "Does anyone know when the next abstract art workshop starts? Really looking forward to it.",
+    "tag": "Question",
+    "date": "1 day ago"
+  }
+]

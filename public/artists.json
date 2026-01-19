@@ -1,0 +1,30 @@
+[
+  {
+    "id": 1,
+    "name": "Leonardo Davi",
+    "role": "Oil Painting Expert",
+    "image": "https://i.ibb.co/7JwRYmpX/exhibitions-751576-1920-1.jpg",
+    "works": 42
+  },
+  {
+    "id": 2,
+    "name": "Sarah Jenkins",
+    "role": "Digital Concept Artist",
+    "image": "https://i.ibb.co/B0SvPyt/post3-home1-1024x440-1.jpg",
+    "works": 35
+  },
+  {
+    "id": 3,
+    "name": "Alex Rivira",
+    "role": "Abstract Sculptor",
+    "image": "https://i.ibb.co/F4YjyqtD/exhibition-1659447-1920-1-1536x806.jpg",
+    "works": 28
+  },
+  {
+    "id": 4,
+    "name": "Sofia Chen",
+    "role": "Modern Calligrapher",
+    "image": "https://i.ibb.co/XF0n1zS/buy-ticket.jpg",
+    "works": 50
+  }
+]

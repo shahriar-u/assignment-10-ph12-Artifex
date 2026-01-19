@@ -1,0 +1,34 @@
+[
+  {
+    "id": 1,
+    "title": "Abstract Waves",
+    "artist": "John Doe",
+    "category": "Modern Art",
+    "image": "https://i.ibb.co.com/7JwRYmpX/exhibitions-751576-1920-1.jpg",
+    "size": "md:row-span-2"
+  },
+  {
+    "id": 2,
+    "title": "Golden Sunset",
+    "artist": "Jane Smith",
+    "category": "Landscape",
+    "image": "https://i.ibb.co.com/B0SvPyt/post3-home1-1024x440-1.jpg",
+    "size": "md:col-span-1"
+  },
+  {
+    "id": 3,
+    "title": "Urban Silence",
+    "artist": "Alex Vance",
+    "category": "Photography",
+    "image": "https://i.ibb.co.com/F4YjyqtD/exhibition-1659447-1920-1-1536x806.jpg",
+    "size": "md:row-span-2"
+  },
+  {
+    "id": 4,
+    "title": "Renaissance",
+    "artist": "Michelangelo",
+    "category": "Classical",
+    "image": "https://i.ibb.co.com/XF0n1zS/buy-ticket.jpg",
+    "size": "md:col-span-1"
+  }
+]

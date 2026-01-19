@@ -1,0 +1,50 @@
+[
+  {
+    "id": 1,
+    "title": "Abstract Waves",
+    "artist": "John Doe",
+    "category": "Modern Art",
+    "image": "https://i.ibb.co.com/7JwRYmpX/exhibitions-751576-1920-1.jpg",
+    "description": "A beautiful abstract representation of ocean waves."
+  },
+  {
+    "id": 2,
+    "title": "Golden Sunset",
+    "artist": "Jane Smith",
+    "category": "Landscape",
+    "image": "https://i.ibb.co.com/B0SvPyt/post3-home1-1024x440-1.jpg",
+    "description": "Capturing the golden hour in the deep forest."
+  },
+  {
+    "id": 3,
+    "title": "Urban Silence",
+    "artist": "Alex Vance",
+    "category": "Photography",
+    "image": "https://i.ibb.co.com/F4YjyqtD/exhibition-1659447-1920-1-1536x806.jpg",
+    "description": "A silent street in the heart of a busy city."
+  },
+  {
+    "id": 4,
+    "title": "Renaissance Revival",
+    "artist": "Michelangelo Jr.",
+    "category": "Classical",
+    "image": "https://i.ibb.co.com/XF0n1zS/buy-ticket.jpg",
+    "description": "Inspired by the classical era of renaissance."
+  },
+  {
+    "id": 5,
+    "title": "Renaissance Revival",
+    "artist": "Michelangelo Jr.",
+    "category": "Classical",
+    "image": "https://i.ibb.co.com/XF0n1zS/buy-ticket.jpg",
+    "description": "Inspired by the classical era of renaissance."
+  },
+  {
+    "id": 6,
+    "title": "Renaissance Revival",
+    "artist": "Michelangelo Jr.",
+    "category": "Classical",
+    "image": "https://i.ibb.co.com/XF0n1zS/buy-ticket.jpg",
+    "description": "Inspired by the classical era of renaissance."
+  }
+]
