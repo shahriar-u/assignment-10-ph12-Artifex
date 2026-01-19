@@ -12,7 +12,7 @@ function App() {
         <Navbar />
       </header>
 
-      <main className="flex-grow pt-24 md:pt-28">
+      <main className="grow pt-24 md:pt-28">
         <Outlet />
       </main>
 
