@@ -26,7 +26,7 @@ const ArtworkDetails = () => {
   
   useEffect(() => {
     setLoading(true);
-    fetch(`http://localhost:3000/artwork/${id}`)
+    fetch(`${import.meta.env.VITE_API_URL}/artwork/${id}`)
       .then((res) => res.json())
       .then((data) => {
         setArtwork(data);
@@ -34,7 +34,7 @@ const ArtworkDetails = () => {
 
        
         if (data?.userEmail) {
-          fetch(`http://localhost:3000/user-total-art/${data.userEmail}`)
+          fetch(`${import.meta.env.VITE_API_URL}/user-total-art/${data.userEmail}`)
             .then((res) => res.json())
             .then((statData) => {
               setTotalAuthorPosts(statData.totalPosts || 0);
@@ -57,7 +57,7 @@ const ArtworkDetails = () => {
     setIsLiked(newLikedStatus);
     setLikeCount(newLikedStatus ? likeCount + 1 : likeCount - 1);
 
-    fetch(`http://localhost:3000/artwork/like/${id}`, {
+    fetch(`${import.meta.env.VITE_API_URL}/artwork/like/${id}`, {
       method: "PATCH",
       headers: { "content-type": "application/json" },
       body: JSON.stringify({ isLiked: newLikedStatus }),
@@ -85,7 +85,7 @@ const ArtworkDetails = () => {
       price: artwork.price,
     };
 
-    fetch(`http://localhost:3000/favorites`, {
+    fetch(`${import.meta.env.VITE_API_URL}/favorites`, {
       method: "POST",
       headers: { "content-type": "application/json" },
       body: JSON.stringify(favoriteItem),

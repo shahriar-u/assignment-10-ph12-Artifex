@@ -45,7 +45,7 @@ const AddArtwork = () => {
     };
 
     // সার্ভারে ডাটা পাঠানো
-    fetch("http://localhost:3000/add-artwork", {
+    fetch(`${import.meta.env.VITE_API_URL}/add-artwork`, {
       method: "POST",
       headers: {
         "content-type": "application/json",

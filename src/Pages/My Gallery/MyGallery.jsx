@@ -2,6 +2,7 @@
 
 import React, { useContext, useEffect, useState } from "react";
 import { FaEdit, FaTrashAlt, FaEye } from "react-icons/fa";
+import toast from "react-hot-toast";
 import { Link } from "react-router-dom";
 import { AuthContextAPI } from "../../AuthProvider/AuthProvider";
 import Loading from "../../Components/Loading/Loading";
@@ -15,7 +16,7 @@ const MyGallery = () => {
   
   useEffect(() => {
     if (user?.email) {
-      fetch(`http://localhost:3000/my-gallery/${user?.email}`)
+      fetch(`${import.meta.env.VITE_API_URL}/my-gallery/${user?.email}`)
         .then((res) => res.json())
         .then((data) => {
           setMyArtworks(data);
@@ -42,7 +43,7 @@ const MyGallery = () => {
       color: "#fff",
     }).then((result) => {
       if (result.isConfirmed) {
-        fetch(`http://localhost:3000/artwork/${id}`, {
+        fetch(`${import.meta.env.VITE_API_URL}/artwork/${id}`, {
           method: "DELETE",
         })
           .then((res) => res.json())
@@ -100,7 +101,7 @@ const MyGallery = () => {
             </thead>
             <tbody className="divide-y divide-white/5">
               {myArtworks.map((art) => (
-                <tr key={art._id} className="hover:bg-white/2 transition-colors group">
+                <tr key={art._id} className="hover:bg-white/[0.02] transition-colors group">
                   <td className="p-6">
                     <div className="flex items-center gap-4">
                       <img

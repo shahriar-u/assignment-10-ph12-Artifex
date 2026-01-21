@@ -15,7 +15,7 @@ const MyFavorites = () => {
   
   useEffect(() => {
     if (user?.email) {
-      fetch(`http://localhost:3000/favorites/${user?.email}`)
+      fetch(`${import.meta.env.VITE_API_URL}/favorites/${user?.email}`)
         .then((res) => res.json())
         .then((data) => {
           setFavoriteArtworks(data);
@@ -34,7 +34,7 @@ const MyFavorites = () => {
     if (
       window.confirm("Are you sure you want to remove this from favorites?")
     ) {
-      fetch(`http://localhost:3000/favorites/${id}`, {
+      fetch(`${import.meta.env.VITE_API_URL}/favorites/${id}`, {
         method: "DELETE",
       })
         .then((res) => res.json())
@@ -84,7 +84,7 @@ const MyFavorites = () => {
                   <img
                     src={art.image}
                     alt={art.title}
-                    className="w-full h-full object-cover grayscale-30 group-hover:grayscale-0 transition-all duration-1000 group-hover:scale-110"
+                    className="w-full h-full object-cover grayscale-[30%] group-hover:grayscale-0 transition-all duration-1000 group-hover:scale-110"
                   />
 
                   
@@ -130,7 +130,7 @@ const MyFavorites = () => {
           <div className="flex flex-col items-center justify-center py-32 border border-dashed border-white/10 rounded-sm bg-[#111111]/30">
             <div className="relative mb-6">
               <FaHeart className="text-6xl text-gray-800" />
-              <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-10 h-0.5 bg-gray-600 rotate-45"></div>
+              <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-10 h-[2px] bg-gray-600 rotate-45"></div>
             </div>
             <h3 className="text-xl font-serif font-bold text-gray-500 uppercase tracking-widest mb-4">
               Collection is Empty

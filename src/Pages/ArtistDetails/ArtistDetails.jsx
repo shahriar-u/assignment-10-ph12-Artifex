@@ -7,7 +7,7 @@ const ArtistDetails = () => {
 
     useEffect(() => {
         
-        fetch(`http://localhost:3000/artist-details/${email}`)
+        fetch(`${import.meta.env.VITE_API_URL}/artist-details/${email}`)
             .then(res => res.json())
             .then(data => setProfileData(data))
             .catch(err => console.error("Error fetching artist details:", err));

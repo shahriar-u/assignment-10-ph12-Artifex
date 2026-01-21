@@ -36,7 +36,7 @@ const Home = () => {
   const [artworks, setArtworks] = useState([]);
 
   useEffect(() => {
-    fetch("http://localhost:3000/recent-artworks")
+    fetch(`${import.meta.env.VITE_API_URL}/recent-artworks`)
       .then((res) => res.json())
       .then((data) => setArtworks(data))
       .catch((err) => console.error("Error fetching data:", err));
@@ -197,7 +197,7 @@ const Home = () => {
               Featured
               <TypewriterHook array={[" Artworks"]} />
             </h2>
-            <div className="w-16 h-px bg-amber-500 mx-auto mt-6"></div>
+            <div className="w-16 h-[1px] bg-amber-500 mx-auto mt-6"></div>
           </div>
 
           {/* art card grid                                                                                                                              */}
@@ -216,7 +216,7 @@ const Home = () => {
               From
               <TypewriterHook array={[" Our Collection"]} />
             </h2>
-            <div className="w-20 h-px bg-amber-500 mx-auto mt-6"></div>
+            <div className="w-20 h-[1px] bg-amber-500 mx-auto mt-6"></div>
           </div>
 
           
@@ -284,7 +284,7 @@ const Home = () => {
             {creativeTalents.map((artist) => (
               <div key={artist.id} className="group relative">
                 
-                <div className="relative aspect-4/5 overflow-hidden rounded-sm grayscale group-hover:grayscale-0 transition-all duration-700">
+                <div className="relative aspect-[4/5] overflow-hidden rounded-sm grayscale group-hover:grayscale-0 transition-all duration-700">
                   <img
                     src={artist.image}
                     alt={artist.name}

@@ -125,8 +125,8 @@ const Navbar = () => {
 
               {/* dropdown  */}
               {userMenuOpen && (
-                <div className="absolute right-0 top-full pt-4 z-60 animate-fadeIn">
-                  <div className="bg-white border border-gray-100 shadow-2xl p-4 rounded-sm min-w-40 text-center">
+                <div className="absolute right-0 top-full pt-4 z-[60] animate-fadeIn">
+                  <div className="bg-white border border-gray-100 shadow-2xl p-4 rounded-sm min-w-[160px] text-center">
                     <p className="text-[11px] font-bold text-gray-800 mb-3 border-b border-gray-50 pb-2 uppercase tracking-wider">
                       {user?.displayName || "Artist"}
                     </p>

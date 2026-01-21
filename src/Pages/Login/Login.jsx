@@ -85,7 +85,7 @@ const Login = () => {
             <button
               type="button"
               onClick={() => setShowPassword(!showPassword)}
-              className="absolute right-5 top-10.5 text-gray-500 font-bold text-[10px] hover:text-amber-500 transition-colors tracking-tighter"
+              className="absolute right-5 top-[42px] text-gray-500 font-bold text-[10px] hover:text-amber-500 transition-colors tracking-tighter"
             >
               {showPassword ? "HIDE" : "SHOW"}
             </button>
@@ -93,7 +93,7 @@ const Login = () => {
 
           
           <div className="flex justify-between items-center px-1">
-            <div className="min-h-4">
+            <div className="min-h-[1rem]">
                 {error && <p className="text-[10px] text-red-500 font-bold italic tracking-tight">{error}</p>}
             </div>
           

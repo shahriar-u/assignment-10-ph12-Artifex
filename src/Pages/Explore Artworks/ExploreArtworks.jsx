@@ -15,7 +15,7 @@ const ExploreArtworks = () => {
   
   const loadData = (search = "") => {
   
-    fetch(`http://localhost:3000/all-artworks?search=${search}`)
+    fetch(`${import.meta.env.VITE_API_URL}/all-artworks?search=${search}`)
       .then((res) => res.json())
       .then((data) => {
         setArtworks(data);

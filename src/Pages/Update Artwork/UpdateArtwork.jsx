@@ -15,7 +15,7 @@ const UpdateArtwork = () => {
 
   
   useEffect(() => {
-    fetch(`http://localhost:3000/artwork/${id}`)
+    fetch(`${import.meta.env.VITE_API_URL}/artwork/${id}`)
       .then((res) => res.json())
       .then((data) => {
         setArtwork(data);
@@ -43,7 +43,7 @@ const UpdateArtwork = () => {
     };
 
     
-    fetch(`http://localhost:3000/update-artwork/${id}`, {
+    fetch(`${import.meta.env.VITE_API_URL}/update-artwork/${id}`, {
       method: "PUT",
       headers: {
         "content-type": "application/json",
